@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "ScreenConnect Filter",
+  "version": "0.4",
+  "description": "Filter the ScreenConnect machine list by type, OS, status, last seen, installed software, or any PowerShell True/False check.",
+  "content_scripts": [
+    {
+      "matches": ["https://*.screenconnect.com/Host*", "https://*.screenconnect.com/host*"],
+      "js": ["content.js"],
+      "world": "MAIN"
+    }
+  ]
+}
